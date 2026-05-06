@@ -145,7 +145,7 @@ def main(dossier: str) -> None:
     for a in corpus:
         compteur[a["section"]] = compteur.get(a["section"], 0) + 1
 
-    print(f"✓ {len(corpus)} articles extraits → {OUTPUT_PATH}\n")
+    print(f"{len(corpus)} articles extraits → {OUTPUT_PATH}\n")
     print("Répartition par thème :")
     for section, n in sorted(compteur.items()):
         print(f"  {n:3d}  {section}")

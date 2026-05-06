@@ -44,7 +44,7 @@ class VectorDB:
         self.index.add(vecteurs)
 
         self._sauvegarder()
-        print(f"✓ Index FAISS créé  : {self.index.ntotal} vecteurs, dim={dimension}")
+        print(f"Index FAISS créé  : {self.index.ntotal} vecteurs, dim={dimension}")
 
 
 
@@ -57,7 +57,7 @@ class VectorDB:
                 ensure_ascii=False,
                 indent=2,
             )
-        print(f"✓ Sauvegardé : {self.index_path}  +  {self.meta_path}")
+        print(f"Sauvegardé : {self.index_path}  +  {self.meta_path}")
 
     def _charger(self) -> None:
         print("Chargement de la base FAISS...")
@@ -68,7 +68,7 @@ class VectorDB:
         model_name     = meta.get("embedding_model", EMBEDDING_MODEL_NAME)
         self.model     = SentenceTransformer(model_name, device="cpu")
         print(f"Modèle d'embedding : {model_name}")
-        print(f"✓ {self.index.ntotal} vecteurs chargés (dim={self.index.d})")
+        print(f"{self.index.ntotal} vecteurs chargés (dim={self.index.d})")
 
 
 
