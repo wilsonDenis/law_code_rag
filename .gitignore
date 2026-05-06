@@ -216,3 +216,34 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# --- Projet RAG Code du travail ---
+
+# Clés API et secrets (déjà couvert par .env ci-dessus, rappel explicite)
+.env
+*.env
+.env.*
+
+# Documents pédagogiques du prof (ne pas soumettre)
+SujetC.md
+TP_RAG.pdf
+explication.md
+
+# Code de démonstration du prof
+my_first_vector_db-my_first_rag/
+
+# Archives LEGI téléchargées (trop lourdes, données publiques)
+20*/
+LEGI*/
+*.tar.gz
+*.tar
+
+# Base vectorielle générée localement (reconstruite via indexation.py)
+code_travail_db/
+
+# macOS
+.DS_Store
+code_travail_db.faiss
+code_travail_db.json
+.claude/
+revision.md
