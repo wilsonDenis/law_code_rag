@@ -1,4 +1,4 @@
-# Compte-rendu — Assistant Code du Travail (RAG)
+# Compte rendu  Assistant Code du Travail (RAG)
 
 ## Décisions de conception
 
