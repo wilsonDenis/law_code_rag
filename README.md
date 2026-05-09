@@ -1,4 +1,4 @@
-# Assistant Code du Travail — RAG avec Python et Groq
+# Assistant Code du Travail RAG avec Python et Groq
 
 Système RAG (Retrieval-Augmented Generation) qui répond à des questions sur le droit du travail français en citant les articles du Code du travail.
 
